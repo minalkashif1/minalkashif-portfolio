@@ -1,3 +1,4 @@
+import type { MouseEvent } from "react";
 import "../styles/Socials.css";
 import {
   FaGithub,
@@ -6,6 +7,11 @@ import {
 } from "react-icons/fa";
 
 function Socials() {
+  const handleGithubClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    console.log("GitHub link clicked");
+  };
+
   return (
     <section id="socials" className="socials">
       <span className="section-tag">CONNECT</span>
@@ -23,6 +29,7 @@ function Socials() {
           target="_blank"
           rel="noreferrer"
           className="social-card"
+          onClick={handleGithubClick}
         >
           <span className="social-icon">
             <FaGithub />

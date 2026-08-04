@@ -1,3 +1,4 @@
+import type { MouseEvent } from "react";
 import "../styles/ProjectCard.css";
 
 interface ProjectCardProps {
@@ -13,6 +14,11 @@ function ProjectCard({
   tech,
   github,
 }: ProjectCardProps) {
+  const handleGithubClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    console.log(`Project ${title} GitHub link clicked`);
+  };
+
   return (
     <div className="project-card">
       <h3>{title}</h3>
@@ -25,7 +31,7 @@ function ProjectCard({
         ))}
       </div>
 
-      <a href={github} target="_blank" rel="noreferrer">
+      <a href={github} target="_blank" rel="noreferrer" onClick={handleGithubClick}>
         View Project →
       </a>
     </div>
