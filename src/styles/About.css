@@ -1,0 +1,181 @@
+.about{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:80px;
+    background:#fff;
+}
+
+.about-content{
+    flex:1;
+}
+
+.section-tag{
+    color:#9b6cff;
+    font-weight:600;
+    letter-spacing:4px;
+    font-size:14px;
+}
+
+.about h2{
+    font-size:3.4rem;
+    margin:20px 0;
+    line-height:1.2;
+    color:#2f2454;
+}
+
+.about h2 span{
+    color:#9b6cff;
+}
+
+.about p{
+    margin-top:20px;
+    color:#666;
+    line-height:1.9;
+    font-size:17px;
+}
+
+.about-buttons{
+    margin-top:40px;
+    display:flex;
+    gap:20px;
+}
+
+.about-btn{
+    padding:14px 30px;
+    background:#9b6cff;
+    color:white;
+    border-radius:40px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.about-btn:hover{
+    transform:translateY(-4px);
+}
+
+.outline-btn{
+    padding:14px 30px;
+    border:2px solid #9b6cff;
+    border-radius:40px;
+    text-decoration:none;
+    color:#9b6cff;
+    transition:.3s;
+}
+
+.outline-btn:hover{
+    background:#9b6cff;
+    color:white;
+}
+
+.about-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.glass-card{
+
+    width:360px;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:linear-gradient(145deg,#f5eaff,#ffffff);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08);
+
+    text-align:center;
+}
+
+.avatar{
+
+    width:140px;
+
+    height:140px;
+
+    border-radius:50%;
+
+    background:#9b6cff;
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:auto;
+
+    font-size:48px;
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+}
+
+.glass-card h3{
+
+    color:#35245b;
+
+    margin-bottom:8px;
+}
+
+.glass-card p{
+
+    margin-bottom:30px;
+}
+
+.skills{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+}
+
+.skills span{
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    background:white;
+
+    color:#7a48dd;
+
+    font-size:14px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+@media(max-width:900px){
+
+.about{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.about h2{
+
+font-size:2.5rem;
+
+}
+
+.about-buttons{
+
+justify-content:center;
+
+}
+
+}

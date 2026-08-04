@@ -1,0 +1,83 @@
+.socials{
+
+    background:white;
+
+    text-align:center;
+
+}
+
+.socials h2{
+
+    font-size:3rem;
+
+    margin:15px 0;
+
+    color:#35245b;
+
+}
+
+.socials p{
+
+    color:#666;
+
+    margin-bottom:60px;
+
+}
+
+.social-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    gap:30px;
+
+}
+
+.social-card{
+
+    text-decoration:none;
+
+    color:inherit;
+
+    background:#f7efff;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    transition:.3s;
+
+}
+
+.social-card:hover{
+
+    transform:translateY(-8px);
+
+    background:#efe2ff;
+
+}
+
+.social-icon{
+
+    font-size:45px;
+
+    color:#8f5dff;
+
+    margin-bottom:20px;
+
+}
+
+.social-card h3{
+
+    color:#35245b;
+
+    margin-bottom:10px;
+
+}
+
+.social-card span{
+
+    color:#777;
+
+}

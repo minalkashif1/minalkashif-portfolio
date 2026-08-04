@@ -1,0 +1,16 @@
+.projects{
+    background:#faf7ff;
+}
+
+.projects h2{
+    text-align:center;
+    font-size:3rem;
+    color:#3b2b5f;
+    margin-bottom:60px;
+}
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
